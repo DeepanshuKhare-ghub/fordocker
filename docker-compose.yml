@@ -12,7 +12,7 @@ services:
     depends_on:
       - db
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://database-1.cc7ksmouuwew.us-east-1.rds.amazonaws.com/demo_db
+      SPRING_DATASOURCE_URL: jdbc:mysql://database-2.cc7ksmouuwew.us-east-1.rds.amazonaws.com/demo_db
       SPRING_DATASOURCE_USERNAME: admin
       SPRING_DATASOURCE_PASSWORD: Deepraj123
     networks:
