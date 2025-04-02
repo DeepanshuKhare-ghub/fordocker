@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # Spring Boot App
+  app:
+    image: my-spring-boot-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://database-1.cc7ksmouuwew.us-east-1.rds.amazonaws.com/demo_db
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: Deepraj123
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
