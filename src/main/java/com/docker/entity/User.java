@@ -16,6 +16,8 @@ public class User {
 
     private String emailId;
 
+    private String mobile;
+
     public String getEmailId() {
         return emailId;
     }
@@ -39,5 +41,12 @@ public class User {
     public void setId(long id) {
         this.id = id;
     }
-    
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
 }
